@@ -4,6 +4,8 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import firebaseConfig from "./firebase.config";
 
+// const firebaseConfig = {"your firebase config goes here"}
+
 // Initialize Firebase
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const db = getFirestore(app);
